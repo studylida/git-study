@@ -153,7 +153,7 @@ $ git ls-files --stage
 
 ```ini
 [remote "origin"]
-    url = https://github.com/rometemp0613/git-study.git
+    url = https://github.com/studylida/git-study.git
     fetch = +refs/heads/*:refs/remotes/origin/*
 
 [branch "main"]
