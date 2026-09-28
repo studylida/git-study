@@ -1,0 +1,32 @@
+name: Hello CI
+
+on:
+  pull_request:
+    branches: [main]
+  
+  workflow_dispatch:
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파일 목록 확인
+        run: ls -la
+
+      - name: 인사하기
+        run: echo "PR이 올라왔습니다! 자동 검사 시작!"
+
+      - name: README 확인
+        run: |
+          echo "=== README.md 내용 ==="
+          head -5 README.md
+
+      - name: 메타데이터 출력
+        run: |
+          uname -a
+          date
+          git --version

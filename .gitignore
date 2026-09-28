@@ -1,0 +1,14 @@
+# macOS 시스템 파일
+.DS_Store
+._*
+
+# 비밀 정보
+.env
+.env.local
+
+# 로그 파일
+*.log
+
+# 임시 폴더
+temp/
+node_modules/
